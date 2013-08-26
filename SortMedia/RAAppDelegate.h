@@ -7,8 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Tag.h"
+#import "RAGestTag.h"
+#import "RAGestActeur.h"
+#import "RAGestPhoto.h"
 
-@interface RAAppDelegate : NSObject <NSApplicationDelegate>
+@interface RAAppDelegate : NSObject <NSApplicationDelegate> {
+    RAGestTag *WndTag;
+    RAGestActeur *WndActeur;
+    RAGestPhoto *WndPhoto;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
@@ -17,5 +25,8 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:(id)sender;
+- (IBAction)GestionTag:(id)sender;
+- (IBAction)GestionActeur:(id)sender;
+- (IBAction)GestionPhoto:(id)sender;
 
 @end

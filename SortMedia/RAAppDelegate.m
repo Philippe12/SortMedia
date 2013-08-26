@@ -7,6 +7,7 @@
 //
 
 #import "RAAppDelegate.h"
+#import "Tag.h"
 
 @implementation RAAppDelegate
 
@@ -83,7 +84,12 @@
     
     NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:@"SortMedia.storedata"];
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
-    if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
+    
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+    
+    if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:options error:&error]) {
         [[NSApplication sharedApplication] presentError:error];
         return nil;
     }
@@ -132,6 +138,22 @@
     if (![[self managedObjectContext] save:&error]) {
         [[NSApplication sharedApplication] presentError:error];
     }
+}
+
+- (IBAction)GestionTag:(id)sender {
+    WndTag = [[RAGestTag alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndTag showWindow:sender];
+}
+
+- (IBAction)GestionActeur:(id)sender {
+    WndActeur = [[RAGestActeur alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+//    [WndActeur showWindow:sender];
+    [WndActeur runAsPanel:[self window]];
+}
+
+- (IBAction)GestionPhoto:(id)sender {
+    WndPhoto = [[RAGestPhoto alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndPhoto showWindow:sender];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender

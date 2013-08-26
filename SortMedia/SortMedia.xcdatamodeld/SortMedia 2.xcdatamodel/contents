@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="V1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="V2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Acteur" representedClassName="Acteur" syncable="YES">
         <attribute name="cheveux" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
@@ -11,7 +11,6 @@
         <attribute name="mensuration_taille" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="mensuration_taille_semi_basse" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="naisance" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="nationnalite" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="poids" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -19,6 +18,7 @@
         <attribute name="taille" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="yeux" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <relationship name="for_media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="have_acteur" inverseEntity="Media" syncable="YES"/>
+        <relationship name="have_nationnalite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nationnalite" inverseName="for_acteur" inverseEntity="Nationnalite" syncable="YES"/>
     </entity>
     <entity name="Media" representedClassName="Media" isAbstract="YES" syncable="YES">
         <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
@@ -28,6 +28,13 @@
         <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="have_acteur" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Acteur" inverseName="for_media" inverseEntity="Acteur" syncable="YES"/>
         <relationship name="have_tag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="for_media" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Nationnalite" representedClassName="Nationnalite" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" maxValueString="4" syncable="YES"/>
+        <attribute name="drapau" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="indexe" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="for_acteur" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Acteur" inverseName="have_nationnalite" inverseEntity="Acteur" syncable="YES"/>
     </entity>
     <entity name="Photo" representedClassName="Photo" parentEntity="Media" syncable="YES"/>
     <entity name="Tag" representedClassName="Tag" syncable="YES">
@@ -40,7 +47,8 @@
     <elements>
         <element name="Acteur" positionX="-4653" positionY="-5103" width="128" height="313"/>
         <element name="Media" positionX="-4322" positionY="-4860" width="128" height="148"/>
-        <element name="Photo" positionX="-4293" positionY="-4590" width="128" height="43"/>
+        <element name="Photo" positionX="-4322" positionY="-4608" width="128" height="43"/>
         <element name="Tag" positionX="-4653" positionY="-4756" width="128" height="118"/>
+        <element name="Nationnalite" positionX="-4853" positionY="-5013" width="128" height="118"/>
     </elements>
 </model>

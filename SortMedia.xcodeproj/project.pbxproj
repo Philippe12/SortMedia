@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2609D98D175490A80077E3BA /* RAGestPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609D98B175490A80077E3BA /* RAGestPhoto.m */; };
+		2609D98E175490A80077E3BA /* RAGestPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2609D98C175490A80077E3BA /* RAGestPhoto.xib */; };
+		26219FF91755F13C000723B1 /* RAListActeur.m in Sources */ = {isa = PBXBuildFile; fileRef = 26219FF71755F13C000723B1 /* RAListActeur.m */; };
+		26219FFA1755F13C000723B1 /* RAListActeur.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26219FF81755F13C000723B1 /* RAListActeur.xib */; };
+		2621F856174B52160096D246 /* en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2621F854174B52160096D246 /* en.plist */; };
+		2621F857174B52160096D246 /* fr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2621F855174B52160096D246 /* fr.plist */; };
+		263D10EC1740BF940005A017 /* RAGestTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 263D10EA1740BF940005A017 /* RAGestTag.m */; };
+		263D10ED1740BF940005A017 /* RAGestTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263D10EB1740BF940005A017 /* RAGestTag.xib */; };
 		2643FB5C1739402E001FB1D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2643FB5B1739402E001FB1D6 /* Cocoa.framework */; };
 		2643FB661739402E001FB1D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2643FB641739402E001FB1D6 /* InfoPlist.strings */; };
 		2643FB681739402E001FB1D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643FB671739402E001FB1D6 /* main.m */; };
@@ -14,9 +22,39 @@
 		2643FB6F1739402F001FB1D6 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643FB6E1739402F001FB1D6 /* RAAppDelegate.m */; };
 		2643FB721739402F001FB1D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2643FB701739402F001FB1D6 /* MainMenu.xib */; };
 		2643FB751739402F001FB1D6 /* SortMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */; };
+		264B87CA17460AA1006C1126 /* RAGestActeur.m in Sources */ = {isa = PBXBuildFile; fileRef = 264B87C817460AA1006C1126 /* RAGestActeur.m */; };
+		264B87CB17460AA1006C1126 /* RAGestActeur.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264B87C917460AA1006C1126 /* RAGestActeur.xib */; };
+		265ACD6217536A610043E951 /* rebecca_by_oh8-d32gdy6.png in Resources */ = {isa = PBXBuildFile; fileRef = 265ACD6117536A610043E951 /* rebecca_by_oh8-d32gdy6.png */; };
+		265B00B51761C80900052863 /* RAListTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00B31761C80900052863 /* RAListTag.m */; };
+		265B00B61761C80900052863 /* RAListTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265B00B41761C80900052863 /* RAListTag.xib */; };
+		265B00DE176217CF00052863 /* Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 265B00DD176217CF00052863 /* Model.xcmappingmodel */; };
+		265B00E21762185E00052863 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00E11762185E00052863 /* Photo.m */; };
+		265B00E51762185E00052863 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00E41762185E00052863 /* Media.m */; };
+		265B00E81762185F00052863 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00E71762185F00052863 /* Tag.m */; };
+		265B00EB1762185F00052863 /* Nationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00EA1762185F00052863 /* Nationnalite.m */; };
+		265B00EE1762186000052863 /* Acteur.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00ED1762186000052863 /* Acteur.m */; };
+		265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00F2176218CC00052863 /* RAListNationnalite.m */; };
+		265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265B00F3176218CC00052863 /* RAListNationnalite.xib */; };
+		265CB4A4176223F700C562E9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265CB4A2176223F700C562E9 /* Quartz.framework */; };
+		265CB4A5176223F700C562E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265CB4A3176223F700C562E9 /* QuartzCore.framework */; };
+		265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 265CB4A8176224D300C562E9 /* RAEditImage.m */; };
+		265CB4AB176224D300C562E9 /* RAEditImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265CB4A9176224D300C562E9 /* RAEditImage.xib */; };
+		267D4AFC17450931002F98C2 /* RAEnabledTranformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D4AFB17450931002F98C2 /* RAEnabledTranformer.m */; };
+		26CCDB65173D376500E472FE /* RAImageTranformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCDB64173D376500E472FE /* RAImageTranformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2609D98A175490A80077E3BA /* RAGestPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestPhoto.h; sourceTree = "<group>"; };
+		2609D98B175490A80077E3BA /* RAGestPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestPhoto.m; sourceTree = "<group>"; };
+		2609D98C175490A80077E3BA /* RAGestPhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestPhoto.xib; sourceTree = "<group>"; };
+		26219FF61755F13C000723B1 /* RAListActeur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListActeur.h; sourceTree = "<group>"; };
+		26219FF71755F13C000723B1 /* RAListActeur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListActeur.m; sourceTree = "<group>"; };
+		26219FF81755F13C000723B1 /* RAListActeur.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListActeur.xib; sourceTree = "<group>"; };
+		2621F854174B52160096D246 /* en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = en.plist; path = resource/en.plist; sourceTree = "<group>"; };
+		2621F855174B52160096D246 /* fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = fr.plist; path = resource/fr.plist; sourceTree = "<group>"; };
+		263D10E91740BF940005A017 /* RAGestTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestTag.h; sourceTree = "<group>"; };
+		263D10EA1740BF940005A017 /* RAGestTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestTag.m; sourceTree = "<group>"; };
+		263D10EB1740BF940005A017 /* RAGestTag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestTag.xib; sourceTree = "<group>"; };
 		2643FB581739402E001FB1D6 /* SortMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2643FB5B1739402E001FB1D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2643FB5E1739402E001FB1D6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -31,6 +69,38 @@
 		2643FB6E1739402F001FB1D6 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		2643FB711739402F001FB1D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2643FB741739402F001FB1D6 /* SortMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SortMedia.xcdatamodel; sourceTree = "<group>"; };
+		264B87C717460AA1006C1126 /* RAGestActeur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestActeur.h; sourceTree = "<group>"; };
+		264B87C817460AA1006C1126 /* RAGestActeur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestActeur.m; sourceTree = "<group>"; };
+		264B87C917460AA1006C1126 /* RAGestActeur.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestActeur.xib; sourceTree = "<group>"; };
+		265ACD6117536A610043E951 /* rebecca_by_oh8-d32gdy6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rebecca_by_oh8-d32gdy6.png"; path = "resource/rebecca_by_oh8-d32gdy6.png"; sourceTree = "<group>"; };
+		265B00B21761C80900052863 /* RAListTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListTag.h; sourceTree = "<group>"; };
+		265B00B31761C80900052863 /* RAListTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListTag.m; sourceTree = "<group>"; };
+		265B00B41761C80900052863 /* RAListTag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListTag.xib; sourceTree = "<group>"; };
+		265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 2.xcdatamodel"; sourceTree = "<group>"; };
+		265B00C71762078A00052863 /* SortMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SortMedia.entitlements; sourceTree = "<group>"; };
+		265B00DD176217CF00052863 /* Model.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = Model.xcmappingmodel; path = ../Model.xcmappingmodel; sourceTree = "<group>"; };
+		265B00E01762185E00052863 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		265B00E11762185E00052863 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		265B00E31762185E00052863 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		265B00E41762185E00052863 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		265B00E61762185F00052863 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		265B00E71762185F00052863 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		265B00E91762185F00052863 /* Nationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nationnalite.h; sourceTree = "<group>"; };
+		265B00EA1762185F00052863 /* Nationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nationnalite.m; sourceTree = "<group>"; };
+		265B00EC1762186000052863 /* Acteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acteur.h; sourceTree = "<group>"; };
+		265B00ED1762186000052863 /* Acteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acteur.m; sourceTree = "<group>"; };
+		265B00F1176218CC00052863 /* RAListNationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListNationnalite.h; sourceTree = "<group>"; };
+		265B00F2176218CC00052863 /* RAListNationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListNationnalite.m; sourceTree = "<group>"; };
+		265B00F3176218CC00052863 /* RAListNationnalite.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListNationnalite.xib; sourceTree = "<group>"; };
+		265CB4A2176223F700C562E9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		265CB4A3176223F700C562E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		265CB4A7176224D300C562E9 /* RAEditImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAEditImage.h; sourceTree = "<group>"; };
+		265CB4A8176224D300C562E9 /* RAEditImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAEditImage.m; sourceTree = "<group>"; };
+		265CB4A9176224D300C562E9 /* RAEditImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAEditImage.xib; sourceTree = "<group>"; };
+		267D4AFA17450931002F98C2 /* RAEnabledTranformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAEnabledTranformer.h; sourceTree = "<group>"; };
+		267D4AFB17450931002F98C2 /* RAEnabledTranformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAEnabledTranformer.m; sourceTree = "<group>"; };
+		26CCDB63173D376500E472FE /* RAImageTranformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAImageTranformer.h; sourceTree = "<group>"; };
+		26CCDB64173D376500E472FE /* RAImageTranformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAImageTranformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265CB4A4176223F700C562E9 /* Quartz.framework in Frameworks */,
+				265CB4A5176223F700C562E9 /* QuartzCore.framework in Frameworks */,
 				2643FB5C1739402E001FB1D6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263D10E61740BDE20005A017 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				265CB4A6176224B300C562E9 /* Edit */,
+				265B00F01762189800052863 /* Gestion */,
+				265B00EF1762188A00052863 /* Liste */,
+			);
+			name = Windows;
+			sourceTree = "<group>";
+		};
 		2643FB4F1739402E001FB1D6 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +147,8 @@
 		2643FB5A1739402E001FB1D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				265CB4A2176223F700C562E9 /* Quartz.framework */,
+				265CB4A3176223F700C562E9 /* QuartzCore.framework */,
 				2643FB5B1739402E001FB1D6 /* Cocoa.framework */,
 				2643FB5D1739402E001FB1D6 /* Other Frameworks */,
 			);
@@ -84,10 +168,14 @@
 		2643FB611739402E001FB1D6 /* SortMedia */ = {
 			isa = PBXGroup;
 			children = (
+				265B00DF1762182300052863 /* Migration model */,
+				265B00C71762078A00052863 /* SortMedia.entitlements */,
+				263D10E61740BDE20005A017 /* Windows */,
 				2643FB6D1739402E001FB1D6 /* RAAppDelegate.h */,
 				2643FB6E1739402F001FB1D6 /* RAAppDelegate.m */,
 				2643FB701739402F001FB1D6 /* MainMenu.xib */,
 				2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */,
+				2643FB7E173940E0001FB1D6 /* Gestion DB */,
 				2643FB621739402E001FB1D6 /* Supporting Files */,
 			);
 			path = SortMedia;
@@ -96,6 +184,9 @@
 		2643FB621739402E001FB1D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				265ACD6117536A610043E951 /* rebecca_by_oh8-d32gdy6.png */,
+				2621F854174B52160096D246 /* en.plist */,
+				2621F855174B52160096D246 /* fr.plist */,
 				2643FB631739402E001FB1D6 /* SortMedia-Info.plist */,
 				2643FB641739402E001FB1D6 /* InfoPlist.strings */,
 				2643FB671739402E001FB1D6 /* main.m */,
@@ -103,6 +194,77 @@
 				2643FB6A1739402E001FB1D6 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2643FB7E173940E0001FB1D6 /* Gestion DB */ = {
+			isa = PBXGroup;
+			children = (
+				265B00EC1762186000052863 /* Acteur.h */,
+				265B00ED1762186000052863 /* Acteur.m */,
+				265B00E91762185F00052863 /* Nationnalite.h */,
+				265B00EA1762185F00052863 /* Nationnalite.m */,
+				265B00E61762185F00052863 /* Tag.h */,
+				265B00E71762185F00052863 /* Tag.m */,
+				265B00E31762185E00052863 /* Media.h */,
+				265B00E41762185E00052863 /* Media.m */,
+				265B00E01762185E00052863 /* Photo.h */,
+				265B00E11762185E00052863 /* Photo.m */,
+				26CCDB63173D376500E472FE /* RAImageTranformer.h */,
+				26CCDB64173D376500E472FE /* RAImageTranformer.m */,
+				267D4AFA17450931002F98C2 /* RAEnabledTranformer.h */,
+				267D4AFB17450931002F98C2 /* RAEnabledTranformer.m */,
+			);
+			name = "Gestion DB";
+			sourceTree = "<group>";
+		};
+		265B00DF1762182300052863 /* Migration model */ = {
+			isa = PBXGroup;
+			children = (
+				265B00DD176217CF00052863 /* Model.xcmappingmodel */,
+			);
+			name = "Migration model";
+			sourceTree = "<group>";
+		};
+		265B00EF1762188A00052863 /* Liste */ = {
+			isa = PBXGroup;
+			children = (
+				26219FF61755F13C000723B1 /* RAListActeur.h */,
+				26219FF71755F13C000723B1 /* RAListActeur.m */,
+				26219FF81755F13C000723B1 /* RAListActeur.xib */,
+				265B00B21761C80900052863 /* RAListTag.h */,
+				265B00B31761C80900052863 /* RAListTag.m */,
+				265B00B41761C80900052863 /* RAListTag.xib */,
+				265B00F1176218CC00052863 /* RAListNationnalite.h */,
+				265B00F2176218CC00052863 /* RAListNationnalite.m */,
+				265B00F3176218CC00052863 /* RAListNationnalite.xib */,
+			);
+			name = Liste;
+			sourceTree = "<group>";
+		};
+		265B00F01762189800052863 /* Gestion */ = {
+			isa = PBXGroup;
+			children = (
+				263D10E91740BF940005A017 /* RAGestTag.h */,
+				263D10EA1740BF940005A017 /* RAGestTag.m */,
+				263D10EB1740BF940005A017 /* RAGestTag.xib */,
+				264B87C717460AA1006C1126 /* RAGestActeur.h */,
+				264B87C817460AA1006C1126 /* RAGestActeur.m */,
+				264B87C917460AA1006C1126 /* RAGestActeur.xib */,
+				2609D98A175490A80077E3BA /* RAGestPhoto.h */,
+				2609D98B175490A80077E3BA /* RAGestPhoto.m */,
+				2609D98C175490A80077E3BA /* RAGestPhoto.xib */,
+			);
+			name = Gestion;
+			sourceTree = "<group>";
+		};
+		265CB4A6176224B300C562E9 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				265CB4A7176224D300C562E9 /* RAEditImage.h */,
+				265CB4A8176224D300C562E9 /* RAEditImage.m */,
+				265CB4A9176224D300C562E9 /* RAEditImage.xib */,
+			);
+			name = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +322,16 @@
 				2643FB661739402E001FB1D6 /* InfoPlist.strings in Resources */,
 				2643FB6C1739402E001FB1D6 /* Credits.rtf in Resources */,
 				2643FB721739402F001FB1D6 /* MainMenu.xib in Resources */,
+				263D10ED1740BF940005A017 /* RAGestTag.xib in Resources */,
+				264B87CB17460AA1006C1126 /* RAGestActeur.xib in Resources */,
+				2621F856174B52160096D246 /* en.plist in Resources */,
+				2621F857174B52160096D246 /* fr.plist in Resources */,
+				265ACD6217536A610043E951 /* rebecca_by_oh8-d32gdy6.png in Resources */,
+				2609D98E175490A80077E3BA /* RAGestPhoto.xib in Resources */,
+				26219FFA1755F13C000723B1 /* RAListActeur.xib in Resources */,
+				265B00B61761C80900052863 /* RAListTag.xib in Resources */,
+				265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */,
+				265CB4AB176224D300C562E9 /* RAEditImage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +345,21 @@
 				2643FB681739402E001FB1D6 /* main.m in Sources */,
 				2643FB6F1739402F001FB1D6 /* RAAppDelegate.m in Sources */,
 				2643FB751739402F001FB1D6 /* SortMedia.xcdatamodeld in Sources */,
+				26CCDB65173D376500E472FE /* RAImageTranformer.m in Sources */,
+				263D10EC1740BF940005A017 /* RAGestTag.m in Sources */,
+				267D4AFC17450931002F98C2 /* RAEnabledTranformer.m in Sources */,
+				264B87CA17460AA1006C1126 /* RAGestActeur.m in Sources */,
+				2609D98D175490A80077E3BA /* RAGestPhoto.m in Sources */,
+				26219FF91755F13C000723B1 /* RAListActeur.m in Sources */,
+				265B00B51761C80900052863 /* RAListTag.m in Sources */,
+				265B00DE176217CF00052863 /* Model.xcmappingmodel in Sources */,
+				265B00E21762185E00052863 /* Photo.m in Sources */,
+				265B00E51762185E00052863 /* Media.m in Sources */,
+				265B00E81762185F00052863 /* Tag.m in Sources */,
+				265B00EB1762185F00052863 /* Nationnalite.m in Sources */,
+				265B00EE1762186000052863 /* Acteur.m in Sources */,
+				265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */,
+				265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +495,7 @@
 				2643FB7A1739402F001FB1D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -315,9 +503,10 @@
 		2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */,
 				2643FB741739402F001FB1D6 /* SortMedia.xcdatamodel */,
 			);
-			currentVersion = 2643FB741739402F001FB1D6 /* SortMedia.xcdatamodel */;
+			currentVersion = 265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */;
 			path = SortMedia.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
