@@ -32,10 +32,10 @@
 @property (strong) IBOutlet NSArrayController *ActeurArrayController;
 @property (strong) IBOutlet NSArray *DictNationality;
 @property (strong) IBOutlet NSApplication *Application;
-@property (assign) IBOutlet NSWindow *myPanel;
 
 - (IBAction)openimage:(id)sender;
 - (IBAction)GestNationnalite:(id)sender;
+- (IBAction)Quite:(id)sender;
 
 - (int)runAsPanel: (id)mainWindow;
 

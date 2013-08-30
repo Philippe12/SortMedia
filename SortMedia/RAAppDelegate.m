@@ -142,12 +142,11 @@
 
 - (IBAction)GestionTag:(id)sender {
     WndTag = [[RAGestTag alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
-    [WndTag showWindow:sender];
+    [WndTag runAsPanel:[self window]];
 }
 
 - (IBAction)GestionActeur:(id)sender {
     WndActeur = [[RAGestActeur alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
-//    [WndActeur showWindow:sender];
     [WndActeur runAsPanel:[self window]];
 }
 

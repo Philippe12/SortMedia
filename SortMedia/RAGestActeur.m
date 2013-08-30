@@ -90,13 +90,19 @@
 
 - (IBAction)openimage:(id)sender {
     WndEditImage = [[RAEditImage alloc] init:self ];
-    //[WndEditImage showWindow:sender];
-    [WndEditImage runAsPanel: [self window]];
+    if( [WndEditImage runAsPanel: [self window]] == 1 )
+    {
+        [self useImage:[WndEditImage GetImage]];
+    }
 }
 
 - (IBAction)GestNationnalite:(id)sender {
     WndListNationnalite = [[RAListNationnalite alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
-    [WndListNationnalite showWindow:sender];
+    [WndListNationnalite runAsPanel:[self window]];
+}
+
+- (IBAction)Quite:(id)sender {
+    [NSApp stopModalWithCode:[sender tag]];
 }
 
 - (void)useImage:(NSData*) data {
@@ -106,20 +112,19 @@
     }
 }
 
-- (int)runAsPanel: (id)mainWindow {
-
-    if(_myPanel)
-        [NSBundle loadNibNamed: @"RAGestActeur" owner: self];
-    
-    [NSApp beginSheet:_myPanel
+- (int)runAsPanel: (id)mainWindow {    
+    [NSApp beginSheet:self.window
         modalForWindow:(NSWindow *)mainWindow
-        modalDelegate:self
-        didEndSelector:@selector(didEndSheet:returnCode:contextInfo:)
+        modalDelegate:self.window
+        didEndSelector:nil
         contextInfo:nil];
+        
+    NSInteger retvalue = [NSApp runModalForWindow:self.window];
     
-//    [NSApp runModalForWindow: [self window]];
+    [NSApp endSheet:self.window];
+    [self.window orderOut:self];
     
-    return 0;
+    return (int)retvalue;
 }
 
 

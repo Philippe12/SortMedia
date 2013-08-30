@@ -37,21 +37,19 @@
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
-- (int)runAsPanel: (id)windowmd {
-    [NSApp beginSheet:[self window]
-        modalForWindow:(NSWindow *)windowmd
-        modalDelegate:nil
+- (int)runAsPanel: (id)mainWindow {
+    [NSApp beginSheet:self.window
+        modalForWindow:(NSWindow *)mainWindow
+        modalDelegate:self.window
         didEndSelector:nil
         contextInfo:nil];
     
-    [NSApp runModalForWindow: [self window]];
+    NSInteger retvalue = [NSApp runModalForWindow:self.window];
     
-    return 0;
-}
+    [NSApp endSheet:self.window];
+    [self.window orderOut:self];
 
-- (IBAction)valid:(id)sender {
-//    NSData *data = [_ImageUrl ];
-//    [ItemSecelted SaveImage: data];
+    return (int)retvalue;
 }
 
 - (IBAction)OpenImage:(id)sender {
@@ -61,6 +59,30 @@
         [_ImageEditor setImageWithURL: [openPanel URL]];
     }
 
+}
+
+- (NSData*) GetImage{
+    NSMutableData* retdata = [[NSMutableData alloc]init];
+    CGImageRef image;
+    
+    image = [_ImageEditor image];
+    if (image)
+    {
+        CGImageDestinationRef dest = CGImageDestinationCreateWithData(
+                                                (__bridge CFMutableDataRef)(retdata),
+                                                (__bridge CFStringRef)@"public.jpeg",
+                                                1, NULL );
+        if (dest)
+        {
+            CGImageDestinationAddImage(dest, image,NULL);
+            CGImageDestinationFinalize(dest);
+            CFRelease(dest);
+        }
+    } else
+    {
+        NSLog(@"*** saveImageToPath - no image");
+    }
+    return retdata;
 }
 
 - (IBAction)switchToolMode:(id)sender {
@@ -88,6 +110,10 @@
             [_ImageEditor setCurrentToolMode: IKToolModeAnnotate];
             break;
     }
+}
+
+- (IBAction)didFinish:(id)sender {
+    [NSApp stopModalWithCode:[sender tag]];
 }
 
 @end

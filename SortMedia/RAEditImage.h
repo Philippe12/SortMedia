@@ -16,10 +16,11 @@
 @property (strong) IBOutlet IKImageView *ImageEditor;
 
 - (id)init: (id)item;
-- (IBAction)valid:(id)sender;
 - (IBAction)OpenImage:(id)sender;
 - (IBAction)switchToolMode:(id)sender;
+- (IBAction)didFinish:(id)sender;
 
-- (int)runAsPanel: (id)windowmd;
+- (int)runAsPanel: (id)mainWindow;
+- (NSData*) GetImage;
 
 @end

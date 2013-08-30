@@ -83,15 +83,37 @@
 }
 
 - (IBAction)OpenPicture:(id)sender {
-    NSOpenPanel *openPanel = [[NSOpenPanel alloc] init];
-    if( [openPanel runModal] == NSFileHandlingPanelOKButton )
+    WndEditImage = [[RAEditImage alloc] init:self ];
+    if( [WndEditImage runAsPanel: [self window]] == 1 )
     {
-        NSURL *url = [openPanel URL];
-        NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-        Tag *selectedTag = [self getCurrentTag];
-        if (selectedTag) {
-            selectedTag.image = data;
-        }
+        [self useImage:[WndEditImage GetImage]];
     }
 }
+
+- (IBAction)Quite:(id)sender {
+    [NSApp stopModalWithCode:[sender tag]];
+}
+
+- (void)useImage:(NSData*) data {
+    Tag *selectedTag = [self getCurrentTag];
+    if (selectedTag) {
+        selectedTag.image = data;
+    }
+}
+
+- (int)runAsPanel: (id)mainWindow {
+    [NSApp beginSheet:self.window
+       modalForWindow:(NSWindow *)mainWindow
+        modalDelegate:self.window
+       didEndSelector:nil
+          contextInfo:nil];
+    
+    NSInteger retvalue = [NSApp runModalForWindow:self.window];
+    
+    [NSApp endSheet:self.window];
+    [self.window orderOut:self];
+    
+    return (int)retvalue;
+}
+
 @end

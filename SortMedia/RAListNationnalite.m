@@ -35,6 +35,10 @@
 	return self;
 }
 
+- (IBAction)Quite:(id)sender {
+    [NSApp stopModalWithCode:[sender tag]];
+}
+
 - (void)setManagedObjectModel:(NSManagedObjectModel *)value
 {
 	// keep only weak ref
@@ -71,6 +75,21 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
+- (int)runAsPanel: (id)mainWindow {
+    [NSApp beginSheet:self.window
+       modalForWindow:(NSWindow *)mainWindow
+        modalDelegate:self.window
+       didEndSelector:nil
+          contextInfo:nil];
+    
+    NSInteger retvalue = [NSApp runModalForWindow:self.window];
+    
+    [NSApp endSheet:self.window];
+    [self.window orderOut:self];
+    
+    return (int)retvalue;
 }
 
 @end
