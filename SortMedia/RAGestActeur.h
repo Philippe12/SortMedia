@@ -9,25 +9,16 @@
 #import <Cocoa/Cocoa.h>
 #import "RAListNationnalite.h"
 #import "RAEditImage.h"
+#import "RAPanelController.h"
 
-@interface RAGestActeur : NSWindowController  <NSWindowDelegate> {
-    NSManagedObjectContext *_moc;
-    NSManagedObjectModel *_mom;
-    NSPersistentStoreCoordinator *_psc;
+@interface RAGestActeur : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;    
     RAListNationnalite *WndListNationnalite;
     RAEditImage *WndEditImage;
 }
 - (void)useImage:(NSData*) data;
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value;
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value;
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value;
 
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
-
-- (RAGestActeur *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc;
+- (id) initLoc;
 
 @property (strong) IBOutlet NSArrayController *ActeurArrayController;
 @property (strong) IBOutlet NSArray *DictNationality;
@@ -35,8 +26,5 @@
 
 - (IBAction)openimage:(id)sender;
 - (IBAction)GestNationnalite:(id)sender;
-- (IBAction)Quite:(id)sender;
-
-- (int)runAsPanel: (id)mainWindow;
 
 @end

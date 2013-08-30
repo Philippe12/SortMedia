@@ -7,26 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RAPanelController.h"
 #import "RAListActeur.h"
 #import "RAListTag.h"
 
-@interface RAGestPhoto : NSWindowController <NSWindowDelegate> {
-    NSManagedObjectContext *_moc;
-    NSManagedObjectModel *_mom;
-    NSPersistentStoreCoordinator *_psc;
+@interface RAGestPhoto : RAPanelController <NSWindowDelegate> {
     RAListActeur *WndListActeur;
     RAListTag *WndListTag;
 }
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value;
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value;
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value;
 
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
+- (id)initLoc;
 
-
-- (RAGestPhoto *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc;
 - (IBAction)AddActeur:(id)sender;
 - (IBAction)RemoveActeur:(id)sender;
 - (IBAction)RemoveTag:(id)sender;

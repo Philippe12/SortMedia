@@ -7,23 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RAPanelController.h"
 
-@interface RAListNationnalite : NSWindowController  <NSWindowDelegate> {
-    NSManagedObjectContext *_moc;
-    NSManagedObjectModel *_mom;
-    NSPersistentStoreCoordinator *_psc;
+@interface RAListNationnalite : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;
 }
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value;
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value;
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value;
-- (int)runAsPanel: (id)mainWindow;
 
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
-
-- (RAListNationnalite *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc;
-- (IBAction)Quite:(id)sender;
+- (id)initLoc;
 
 @end

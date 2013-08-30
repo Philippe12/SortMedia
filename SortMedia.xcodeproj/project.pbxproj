@@ -13,6 +13,8 @@
 		26219FFA1755F13C000723B1 /* RAListActeur.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26219FF81755F13C000723B1 /* RAListActeur.xib */; };
 		2621F856174B52160096D246 /* en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2621F854174B52160096D246 /* en.plist */; };
 		2621F857174B52160096D246 /* fr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2621F855174B52160096D246 /* fr.plist */; };
+		2631A45F17D0892B0001868B /* RAPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2631A45D17D0892B0001868B /* RAPanelController.m */; };
+		2631A46017D0892B0001868B /* RAPanelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2631A45E17D0892B0001868B /* RAPanelController.xib */; };
 		263D10EC1740BF940005A017 /* RAGestTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 263D10EA1740BF940005A017 /* RAGestTag.m */; };
 		263D10ED1740BF940005A017 /* RAGestTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263D10EB1740BF940005A017 /* RAGestTag.xib */; };
 		2643FB5C1739402E001FB1D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2643FB5B1739402E001FB1D6 /* Cocoa.framework */; };
@@ -52,6 +54,9 @@
 		26219FF81755F13C000723B1 /* RAListActeur.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListActeur.xib; sourceTree = "<group>"; };
 		2621F854174B52160096D246 /* en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = en.plist; path = resource/en.plist; sourceTree = "<group>"; };
 		2621F855174B52160096D246 /* fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = fr.plist; path = resource/fr.plist; sourceTree = "<group>"; };
+		2631A45C17D0892B0001868B /* RAPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPanelController.h; sourceTree = "<group>"; };
+		2631A45D17D0892B0001868B /* RAPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPanelController.m; sourceTree = "<group>"; };
+		2631A45E17D0892B0001868B /* RAPanelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAPanelController.xib; sourceTree = "<group>"; };
 		263D10E91740BF940005A017 /* RAGestTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestTag.h; sourceTree = "<group>"; };
 		263D10EA1740BF940005A017 /* RAGestTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestTag.m; sourceTree = "<group>"; };
 		263D10EB1740BF940005A017 /* RAGestTag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestTag.xib; sourceTree = "<group>"; };
@@ -120,6 +125,9 @@
 		263D10E61740BDE20005A017 /* Windows */ = {
 			isa = PBXGroup;
 			children = (
+				2631A45C17D0892B0001868B /* RAPanelController.h */,
+				2631A45D17D0892B0001868B /* RAPanelController.m */,
+				2631A45E17D0892B0001868B /* RAPanelController.xib */,
 				265CB4A6176224B300C562E9 /* Edit */,
 				265B00F01762189800052863 /* Gestion */,
 				265B00EF1762188A00052863 /* Liste */,
@@ -332,6 +340,7 @@
 				265B00B61761C80900052863 /* RAListTag.xib in Resources */,
 				265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */,
 				265CB4AB176224D300C562E9 /* RAEditImage.xib in Resources */,
+				2631A46017D0892B0001868B /* RAPanelController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +369,7 @@
 				265B00EE1762186000052863 /* Acteur.m in Sources */,
 				265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */,
 				265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */,
+				2631A45F17D0892B0001868B /* RAPanelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,27 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RAPanelController.h"
 #import "RAGestActeur.h"
 #import "Photo.h"
 
-@interface RAListActeur : NSWindowController  <NSWindowDelegate> {
-    NSManagedObjectContext *_moc;
-    NSManagedObjectModel *_mom;
-    NSPersistentStoreCoordinator *_psc;
+@interface RAListActeur : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;
     RAGestActeur *WndActeur;
     Photo *_SelectedItem;
 }
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value;
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value;
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value;
 - (void)setPhotoItem:(Photo *)value;
 
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
-
-- (RAListActeur *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc : (Photo*)item;
+- (id)initLoc;
 
 @property (strong) IBOutlet NSArrayController *ActeurArrayController;
 - (IBAction)GestionDesActeur:(id)sender;

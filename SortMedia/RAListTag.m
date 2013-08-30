@@ -24,15 +24,9 @@
     return self;
 }
 
-- (RAListTag *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc : (Photo *) item
-{
+- (id)initLoc {
 	self = [super initWithWindowNibName:@"RAListTag"];
-    
-	[self setManagedObjectContext:inMoc];
-	[self setManagedObjectModel:inMom];
-	[self setPersistentStoreCoordinator:inPsc];
-    [self setPhotoItem:item];
-    
+        
 	return self;
 }
 
@@ -40,37 +34,6 @@
 {
 	// keep only weak ref
 	_SelectedItem = value;
-}
-
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value
-{
-	// keep only weak ref
-	_mom = value;
-}
-
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value
-{
-	// keep only weak ref
-	_moc = value;
-}
-
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value
-{
-    _psc = value;
-}
-
-- (NSManagedObjectContext *)managedObjectContext
-{
-	return _moc;
-}
-
-- (NSManagedObjectModel *)managedObjectModel
-{
-    return _mom;
-}
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
-{
-    return _psc;
 }
 
 - (void)windowDidLoad
@@ -81,19 +44,12 @@
 }
 
 - (IBAction)GestionDesTags:(id)sender {
-    WndActeur = [[RAGestTag alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
-    [WndActeur showWindow:sender];
-}
-
--(Tag*)getCurrentTag {
-    if ([[self.TagArrayController selectedObjects] count] > 0) {
-        return [[self.TagArrayController selectedObjects] objectAtIndex:0];
-    } else {
-        return nil;
-    }
+    WndTag = [[RAGestTag alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndTag showWindow:sender];
 }
 
 - (IBAction)AddTag:(id)sender {
-    [_SelectedItem addHave_tagObject:[self getCurrentTag]];
+    [_SelectedItem addHave_tagObject:[self getCurrent: _TagArrayController]];
+    [self Quite:sender];
 }
 @end

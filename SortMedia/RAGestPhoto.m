@@ -25,72 +25,38 @@
     return self;
 }
 
-- (RAGestPhoto *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc
-{
+- (id)initLoc {
 	self = [super initWithWindowNibName:@"RAGestPhoto"];
-    
-	[self setManagedObjectContext:inMoc];
-	[self setManagedObjectModel:inMom];
-	[self setPersistentStoreCoordinator:inPsc];
-    
+        
 	return self;
 }
 
 - (IBAction)AddActeur:(id)sender {
-    WndListActeur = [[RAListActeur alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]:[self getCurrentPhoto]];
-    [WndListActeur showWindow:sender];
+    WndListActeur = [[RAListActeur alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndListActeur setPhotoItem:[self getCurrent:_PhotoArray]];
+    [WndListActeur runAsPanel:[self window]];
 }
 
 - (IBAction)RemoveActeur:(id)sender {
-    Photo *ptrPhoto = [self getCurrentPhoto];
-    Acteur *ptrActeur = [self getCurrentActeur];
+    Photo *ptrPhoto = [self getCurrent:_PhotoArray];
+    Acteur *ptrActeur = [self getCurrent:_ActeurArray];
     if( (ptrPhoto != nil) && (ptrActeur != nil)) {
         [ptrPhoto removeHave_acteurObject:ptrActeur];
     }
 }
 
 - (IBAction)RemoveTag:(id)sender {
-    Photo *ptrPhoto = [self getCurrentPhoto];
-    Tag *ptrTag = [self getCurrentTag];
+    Photo *ptrPhoto = [self getCurrent:_PhotoArray];
+    Tag *ptrTag = [self getCurrent:_TagArray];
     if( (ptrPhoto != nil) && (ptrTag != nil)) {
         [ptrPhoto removeHave_tagObject:ptrTag];
     }
 }
 
 - (IBAction)AddTag:(id)sender {
-    WndListTag = [[RAListTag alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]:[self getCurrentPhoto]];
-    [WndListTag showWindow:sender];
-}
-
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value
-{
-	// keep only weak ref
-	_mom = value;
-}
-
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value
-{
-	// keep only weak ref
-	_moc = value;
-}
-
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value
-{
-    _psc = value;
-}
-
-- (NSManagedObjectContext *)managedObjectContext
-{
-	return _moc;
-}
-
-- (NSManagedObjectModel *)managedObjectModel
-{
-    return _mom;
-}
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
-{
-    return _psc;
+    WndListTag = [[RAListTag alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndListTag setPhotoItem:[self getCurrent:_PhotoArray]];
+    [WndListTag runAsPanel:[self window]];
 }
 
 - (void)windowDidLoad
@@ -100,42 +66,19 @@
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
--(Photo*)getCurrentPhoto {
-    if ([[self.PhotoArray selectedObjects] count] > 0) {
-        return [[self.PhotoArray selectedObjects] objectAtIndex:0];
-    } else {
-        return nil;
-    }
-}
-
--(Acteur*)getCurrentActeur {
-    if ([[self.ActeurArray selectedObjects] count] > 0) {
-        return [[self.ActeurArray selectedObjects] objectAtIndex:0];
-    } else {
-        return nil;
-    }
-}
-
--(Tag*)getCurrentTag {
-    if ([[self.TagArray selectedObjects] count] > 0) {
-        return [[self.TagArray selectedObjects] objectAtIndex:0];
-    } else {
-        return nil;
-    }
-}
-
 - (IBAction)OpenPicture:(id)sender {
     NSOpenPanel *openPanel = [[NSOpenPanel alloc] init];
     if( [openPanel runModal] == NSFileHandlingPanelOKButton )
     {
         NSURL *url = [openPanel URL];
         NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-        Photo *selectedPhoto = [self getCurrentPhoto];
+        Photo *selectedPhoto = [self getCurrent:_PhotoArray];
         if (selectedPhoto) {
             selectedPhoto.photo = data;
             selectedPhoto.file_name = [[url path] lastPathComponent];
         }
     }
 }
+
 
 @end

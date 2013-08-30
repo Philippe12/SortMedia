@@ -7,27 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RAPanelController.h"
 #import "RAGestTag.h"
 #import "Photo.h"
 
-@interface RAListTag : NSWindowController  <NSWindowDelegate> {
-    NSManagedObjectContext *_moc;
-    NSManagedObjectModel *_mom;
-    NSPersistentStoreCoordinator *_psc;
+@interface RAListTag : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;
-    RAGestTag *WndActeur;
+    RAGestTag *WndTag;
     Photo *_SelectedItem;
 }
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value;
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value;
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value;
 - (void)setPhotoItem:(Photo *)value;
 
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 
-- (RAListTag *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc : (Photo*)item;
+- (id)initLoc;
 
 @property (strong) IBOutlet NSArrayController *TagArrayController;
 - (IBAction)GestionDesTags:(id)sender;

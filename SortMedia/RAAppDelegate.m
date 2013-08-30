@@ -152,7 +152,7 @@
 
 - (IBAction)GestionPhoto:(id)sender {
     WndPhoto = [[RAGestPhoto alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
-    [WndPhoto showWindow:sender];
+    [WndPhoto runAsPanel:[self window]];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender

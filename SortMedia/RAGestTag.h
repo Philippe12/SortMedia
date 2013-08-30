@@ -8,27 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 #import "RAEditImage.h"
+#import "RAPanelController.h"
 
-@interface RAGestTag : NSWindowController <NSWindowDelegate> {
-    NSManagedObjectContext *_moc;
-    NSManagedObjectModel *_mom;
-    NSPersistentStoreCoordinator *_psc;
+@interface RAGestTag : RAPanelController <NSWindowDelegate> {
     RAEditImage *WndEditImage;
 }
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value;
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value;
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value;
-- (int)runAsPanel: (id)mainWindow;
 
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
-
-- (RAGestTag *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc;
+- (id)initLoc;
 
 
 @property (strong) IBOutlet NSArrayController *TagArrayController;
 
 - (IBAction)OpenPicture:(id)sender;
-- (IBAction)Quite:(id)sender;
 @end

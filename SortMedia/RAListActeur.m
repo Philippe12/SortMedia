@@ -24,15 +24,9 @@
     return self;
 }
 
-- (RAListActeur *)initWithManagedObjectContext:(NSManagedObjectContext *)inMoc : (NSManagedObjectModel*) inMom : (NSPersistentStoreCoordinator *)inPsc : (Photo *) item
-{
+- (id)initLoc {
 	self = [super initWithWindowNibName:@"RAListActeur"];
-    
-	[self setManagedObjectContext:inMoc];
-	[self setManagedObjectModel:inMom];
-	[self setPersistentStoreCoordinator:inPsc];
-    [self setPhotoItem:item];
-    
+        
 	return self;
 }
 
@@ -40,37 +34,6 @@
 {
 	// keep only weak ref
 	_SelectedItem = value;
-}
-
-- (void)setManagedObjectModel:(NSManagedObjectModel *)value
-{
-	// keep only weak ref
-	_mom = value;
-}
-
-- (void)setManagedObjectContext:(NSManagedObjectContext *)value
-{
-	// keep only weak ref
-	_moc = value;
-}
-
-- (void)setPersistentStoreCoordinator:(NSPersistentStoreCoordinator *)value
-{
-    _psc = value;
-}
-
-- (NSManagedObjectContext *)managedObjectContext
-{
-	return _moc;
-}
-
-- (NSManagedObjectModel *)managedObjectModel
-{
-    return _mom;
-}
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
-{
-    return _psc;
 }
 
 - (void)windowDidLoad
@@ -82,18 +45,11 @@
 
 - (IBAction)GestionDesActeur:(id)sender {
     WndActeur = [[RAGestActeur alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
-    [WndActeur showWindow:sender];
-}
-
--(Acteur*)getCurrentActeur {
-    if ([[self.ActeurArrayController selectedObjects] count] > 0) {
-        return [[self.ActeurArrayController selectedObjects] objectAtIndex:0];
-    } else {
-        return nil;
-    }
+    [WndActeur runAsPanel:[self window]];
 }
 
 - (IBAction)AddActeur:(id)sender {
-    [_SelectedItem addHave_acteurObject:[self getCurrentActeur]];
+    [_SelectedItem addHave_acteurObject:[self getCurrent:_ActeurArrayController]];
+    [self Quite:sender];
 }
 @end
