@@ -14,9 +14,9 @@
 @interface RAListActeur : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;
     RAGestActeur *WndActeur;
-    Photo *_SelectedItem;
+    Media *_SelectedItem;
 }
-- (void)setPhotoItem:(Photo *)value;
+- (void)setPhotoItem:(Media *)value;
 
 - (id)initLoc;
 

@@ -155,6 +155,11 @@
     [WndPhoto runAsPanel:[self window]];
 }
 
+- (IBAction)GestionPhotoSet:(id)sender {
+    WndPhotoSet = [[RAGestPhotoSet alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndPhotoSet runAsPanel:[self window]];
+}
+
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
     // Save changes in the application's managed object context before the application terminates.

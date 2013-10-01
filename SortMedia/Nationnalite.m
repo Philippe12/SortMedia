@@ -2,7 +2,7 @@
 //  Nationnalite.m
 //  SortMedia
 //
-//  Created by Philippe Fouquet on 07/06/13.
+//  Created by Philippe Fouquet on 29/09/13.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
@@ -12,10 +12,10 @@
 
 @implementation Nationnalite
 
-@dynamic nom;
 @dynamic code;
-@dynamic indexe;
 @dynamic drapau;
+@dynamic indexe;
+@dynamic nom;
 @dynamic for_acteur;
 
 @end

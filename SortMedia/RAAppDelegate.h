@@ -11,11 +11,13 @@
 #import "RAGestTag.h"
 #import "RAGestActeur.h"
 #import "RAGestPhoto.h"
+#import "RAGestPhotoSet.h"
 
 @interface RAAppDelegate : NSObject <NSApplicationDelegate> {
     RAGestTag *WndTag;
     RAGestActeur *WndActeur;
     RAGestPhoto *WndPhoto;
+    RAGestPhotoSet *WndPhotoSet;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -28,5 +30,6 @@
 - (IBAction)GestionTag:(id)sender;
 - (IBAction)GestionActeur:(id)sender;
 - (IBAction)GestionPhoto:(id)sender;
+- (IBAction)GestionPhotoSet:(id)sender;
 
 @end

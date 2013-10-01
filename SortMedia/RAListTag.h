@@ -14,9 +14,9 @@
 @interface RAListTag : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;
     RAGestTag *WndTag;
-    Photo *_SelectedItem;
+    Media *_SelectedItem;
 }
-- (void)setPhotoItem:(Photo *)value;
+- (void)setPhotoItem:(Media *)value;
 
 
 - (id)initLoc;

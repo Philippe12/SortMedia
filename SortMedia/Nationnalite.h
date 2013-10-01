@@ -2,7 +2,7 @@
 //  Nationnalite.h
 //  SortMedia
 //
-//  Created by Philippe Fouquet on 07/06/13.
+//  Created by Philippe Fouquet on 29/09/13.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
@@ -13,10 +13,10 @@
 
 @interface Nationnalite : NSManagedObject
 
-@property (nonatomic, retain) NSString * nom;
 @property (nonatomic, retain) NSString * code;
-@property (nonatomic, retain) NSNumber * indexe;
 @property (nonatomic, retain) NSData * drapau;
+@property (nonatomic, retain) NSNumber * indexe;
+@property (nonatomic, retain) NSString * nom;
 @property (nonatomic, retain) NSSet *for_acteur;
 @end
 

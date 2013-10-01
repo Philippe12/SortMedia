@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="V2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="V3" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F37" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Acteur" representedClassName="Acteur" syncable="YES">
         <attribute name="cheveux" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,7 +36,12 @@
         <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="for_acteur" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Acteur" inverseName="have_nationnalite" inverseEntity="Acteur" syncable="YES"/>
     </entity>
-    <entity name="Photo" representedClassName="Photo" parentEntity="Media" syncable="YES"/>
+    <entity name="Photo" representedClassName="Photo" parentEntity="Media" syncable="YES">
+        <relationship name="have_photoset" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoSet" inverseName="have_photo" inverseEntity="PhotoSet" syncable="YES"/>
+    </entity>
+    <entity name="PhotoSet" representedClassName="PhotoSet" parentEntity="Media" syncable="YES">
+        <relationship name="have_photo" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="have_photoset" inverseEntity="Photo" syncable="YES"/>
+    </entity>
     <entity name="Tag" representedClassName="Tag" syncable="YES">
         <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -45,10 +50,11 @@
         <relationship name="for_media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="have_tag" inverseEntity="Media" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Acteur" positionX="-4653" positionY="-5103" width="128" height="313"/>
-        <element name="Media" positionX="-4322" positionY="-4860" width="128" height="148"/>
-        <element name="Nationnalite" positionX="-4853" positionY="-5013" width="128" height="118"/>
-        <element name="Photo" positionX="-4322" positionY="-4608" width="128" height="43"/>
-        <element name="Tag" positionX="-4653" positionY="-4756" width="128" height="118"/>
+        <element name="Acteur" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Media" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Nationnalite" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Photo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PhotoSet" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Tag" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

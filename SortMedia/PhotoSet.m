@@ -1,17 +1,17 @@
 //
-//  Photo.m
+//  PhotoSet.m
 //  SortMedia
 //
 //  Created by Philippe Fouquet on 29/09/13.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
-#import "Photo.h"
 #import "PhotoSet.h"
+#import "Photo.h"
 
 
-@implementation Photo
+@implementation PhotoSet
 
-@dynamic have_photoset;
+@dynamic have_photo;
 
 @end

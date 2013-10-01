@@ -30,7 +30,7 @@
 	return self;
 }
 
-- (void)setPhotoItem:(Photo *)value
+- (void)setPhotoItem:(Media *)value
 {
 	// keep only weak ref
 	_SelectedItem = value;

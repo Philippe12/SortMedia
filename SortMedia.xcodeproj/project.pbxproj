@@ -15,6 +15,9 @@
 		2621F857174B52160096D246 /* fr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2621F855174B52160096D246 /* fr.plist */; };
 		2631A45F17D0892B0001868B /* RAPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2631A45D17D0892B0001868B /* RAPanelController.m */; };
 		2631A46017D0892B0001868B /* RAPanelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2631A45E17D0892B0001868B /* RAPanelController.xib */; };
+		263C287017D0C48900FBC5F7 /* RAGestPhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 263C286E17D0C48900FBC5F7 /* RAGestPhotoSet.m */; };
+		263C287117D0C48900FBC5F7 /* RAGestPhotoSet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263C286F17D0C48900FBC5F7 /* RAGestPhotoSet.xib */; };
+		263C287717D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 263C287617D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel */; };
 		263D10EC1740BF940005A017 /* RAGestTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 263D10EA1740BF940005A017 /* RAGestTag.m */; };
 		263D10ED1740BF940005A017 /* RAGestTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263D10EB1740BF940005A017 /* RAGestTag.xib */; };
 		2643FB5C1739402E001FB1D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2643FB5B1739402E001FB1D6 /* Cocoa.framework */; };
@@ -29,14 +32,15 @@
 		265ACD6217536A610043E951 /* rebecca_by_oh8-d32gdy6.png in Resources */ = {isa = PBXBuildFile; fileRef = 265ACD6117536A610043E951 /* rebecca_by_oh8-d32gdy6.png */; };
 		265B00B51761C80900052863 /* RAListTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00B31761C80900052863 /* RAListTag.m */; };
 		265B00B61761C80900052863 /* RAListTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265B00B41761C80900052863 /* RAListTag.xib */; };
-		265B00DE176217CF00052863 /* Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 265B00DD176217CF00052863 /* Model.xcmappingmodel */; };
-		265B00E21762185E00052863 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00E11762185E00052863 /* Photo.m */; };
-		265B00E51762185E00052863 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00E41762185E00052863 /* Media.m */; };
-		265B00E81762185F00052863 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00E71762185F00052863 /* Tag.m */; };
-		265B00EB1762185F00052863 /* Nationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00EA1762185F00052863 /* Nationnalite.m */; };
-		265B00EE1762186000052863 /* Acteur.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00ED1762186000052863 /* Acteur.m */; };
 		265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00F2176218CC00052863 /* RAListNationnalite.m */; };
 		265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265B00F3176218CC00052863 /* RAListNationnalite.xib */; };
+		265B119617F8801D00F9AB0B /* Acteur.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119517F8801D00F9AB0B /* Acteur.m */; };
+		265B119917F8801E00F9AB0B /* Nationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119817F8801E00F9AB0B /* Nationnalite.m */; };
+		265B119C17F8801E00F9AB0B /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119B17F8801E00F9AB0B /* Tag.m */; };
+		265B119F17F8801E00F9AB0B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119E17F8801E00F9AB0B /* Photo.m */; };
+		265B11A217F8801E00F9AB0B /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B11A117F8801E00F9AB0B /* Media.m */; };
+		265B11A517F8801E00F9AB0B /* PhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B11A417F8801E00F9AB0B /* PhotoSet.m */; };
+		265B11A717F880F500F9AB0B /* Model_3to4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 265B11A617F880F500F9AB0B /* Model_3to4.xcmappingmodel */; };
 		265CB4A4176223F700C562E9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265CB4A2176223F700C562E9 /* Quartz.framework */; };
 		265CB4A5176223F700C562E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265CB4A3176223F700C562E9 /* QuartzCore.framework */; };
 		265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 265CB4A8176224D300C562E9 /* RAEditImage.m */; };
@@ -57,6 +61,11 @@
 		2631A45C17D0892B0001868B /* RAPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPanelController.h; sourceTree = "<group>"; };
 		2631A45D17D0892B0001868B /* RAPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPanelController.m; sourceTree = "<group>"; };
 		2631A45E17D0892B0001868B /* RAPanelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAPanelController.xib; sourceTree = "<group>"; };
+		263C286D17D0C48900FBC5F7 /* RAGestPhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestPhotoSet.h; sourceTree = "<group>"; };
+		263C286E17D0C48900FBC5F7 /* RAGestPhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestPhotoSet.m; sourceTree = "<group>"; };
+		263C286F17D0C48900FBC5F7 /* RAGestPhotoSet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestPhotoSet.xib; sourceTree = "<group>"; };
+		263C287217D0C70C00FBC5F7 /* SortMedia 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 3.xcdatamodel"; sourceTree = "<group>"; };
+		263C287617D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = Model_2to3.xcmappingmodel; path = ../Model_2to3.xcmappingmodel; sourceTree = "<group>"; };
 		263D10E91740BF940005A017 /* RAGestTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestTag.h; sourceTree = "<group>"; };
 		263D10EA1740BF940005A017 /* RAGestTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestTag.m; sourceTree = "<group>"; };
 		263D10EB1740BF940005A017 /* RAGestTag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestTag.xib; sourceTree = "<group>"; };
@@ -83,20 +92,23 @@
 		265B00B41761C80900052863 /* RAListTag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListTag.xib; sourceTree = "<group>"; };
 		265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 2.xcdatamodel"; sourceTree = "<group>"; };
 		265B00C71762078A00052863 /* SortMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SortMedia.entitlements; sourceTree = "<group>"; };
-		265B00DD176217CF00052863 /* Model.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = Model.xcmappingmodel; path = ../Model.xcmappingmodel; sourceTree = "<group>"; };
-		265B00E01762185E00052863 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		265B00E11762185E00052863 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		265B00E31762185E00052863 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
-		265B00E41762185E00052863 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
-		265B00E61762185F00052863 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
-		265B00E71762185F00052863 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
-		265B00E91762185F00052863 /* Nationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nationnalite.h; sourceTree = "<group>"; };
-		265B00EA1762185F00052863 /* Nationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nationnalite.m; sourceTree = "<group>"; };
-		265B00EC1762186000052863 /* Acteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acteur.h; sourceTree = "<group>"; };
-		265B00ED1762186000052863 /* Acteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acteur.m; sourceTree = "<group>"; };
 		265B00F1176218CC00052863 /* RAListNationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListNationnalite.h; sourceTree = "<group>"; };
 		265B00F2176218CC00052863 /* RAListNationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListNationnalite.m; sourceTree = "<group>"; };
 		265B00F3176218CC00052863 /* RAListNationnalite.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListNationnalite.xib; sourceTree = "<group>"; };
+		265B119317F87FA500F9AB0B /* SortMedia 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SortMedia 4.xcdatamodel"; sourceTree = "<group>"; };
+		265B119417F8801D00F9AB0B /* Acteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acteur.h; sourceTree = "<group>"; };
+		265B119517F8801D00F9AB0B /* Acteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acteur.m; sourceTree = "<group>"; };
+		265B119717F8801E00F9AB0B /* Nationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nationnalite.h; sourceTree = "<group>"; };
+		265B119817F8801E00F9AB0B /* Nationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nationnalite.m; sourceTree = "<group>"; };
+		265B119A17F8801E00F9AB0B /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		265B119B17F8801E00F9AB0B /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		265B119D17F8801E00F9AB0B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		265B119E17F8801E00F9AB0B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		265B11A017F8801E00F9AB0B /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		265B11A117F8801E00F9AB0B /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		265B11A317F8801E00F9AB0B /* PhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSet.h; sourceTree = "<group>"; };
+		265B11A417F8801E00F9AB0B /* PhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSet.m; sourceTree = "<group>"; };
+		265B11A617F880F500F9AB0B /* Model_3to4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = Model_3to4.xcmappingmodel; path = ../Model_3to4.xcmappingmodel; sourceTree = "<group>"; };
 		265CB4A2176223F700C562E9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		265CB4A3176223F700C562E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		265CB4A7176224D300C562E9 /* RAEditImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAEditImage.h; sourceTree = "<group>"; };
@@ -207,16 +219,18 @@
 		2643FB7E173940E0001FB1D6 /* Gestion DB */ = {
 			isa = PBXGroup;
 			children = (
-				265B00EC1762186000052863 /* Acteur.h */,
-				265B00ED1762186000052863 /* Acteur.m */,
-				265B00E91762185F00052863 /* Nationnalite.h */,
-				265B00EA1762185F00052863 /* Nationnalite.m */,
-				265B00E61762185F00052863 /* Tag.h */,
-				265B00E71762185F00052863 /* Tag.m */,
-				265B00E31762185E00052863 /* Media.h */,
-				265B00E41762185E00052863 /* Media.m */,
-				265B00E01762185E00052863 /* Photo.h */,
-				265B00E11762185E00052863 /* Photo.m */,
+				265B11A317F8801E00F9AB0B /* PhotoSet.h */,
+				265B11A417F8801E00F9AB0B /* PhotoSet.m */,
+				265B11A017F8801E00F9AB0B /* Media.h */,
+				265B11A117F8801E00F9AB0B /* Media.m */,
+				265B119D17F8801E00F9AB0B /* Photo.h */,
+				265B119E17F8801E00F9AB0B /* Photo.m */,
+				265B119A17F8801E00F9AB0B /* Tag.h */,
+				265B119B17F8801E00F9AB0B /* Tag.m */,
+				265B119717F8801E00F9AB0B /* Nationnalite.h */,
+				265B119817F8801E00F9AB0B /* Nationnalite.m */,
+				265B119417F8801D00F9AB0B /* Acteur.h */,
+				265B119517F8801D00F9AB0B /* Acteur.m */,
 				26CCDB63173D376500E472FE /* RAImageTranformer.h */,
 				26CCDB64173D376500E472FE /* RAImageTranformer.m */,
 				267D4AFA17450931002F98C2 /* RAEnabledTranformer.h */,
@@ -228,7 +242,8 @@
 		265B00DF1762182300052863 /* Migration model */ = {
 			isa = PBXGroup;
 			children = (
-				265B00DD176217CF00052863 /* Model.xcmappingmodel */,
+				265B11A617F880F500F9AB0B /* Model_3to4.xcmappingmodel */,
+				263C287617D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel */,
 			);
 			name = "Migration model";
 			sourceTree = "<group>";
@@ -261,6 +276,9 @@
 				2609D98A175490A80077E3BA /* RAGestPhoto.h */,
 				2609D98B175490A80077E3BA /* RAGestPhoto.m */,
 				2609D98C175490A80077E3BA /* RAGestPhoto.xib */,
+				263C286D17D0C48900FBC5F7 /* RAGestPhotoSet.h */,
+				263C286E17D0C48900FBC5F7 /* RAGestPhotoSet.m */,
+				263C286F17D0C48900FBC5F7 /* RAGestPhotoSet.xib */,
 			);
 			name = Gestion;
 			sourceTree = "<group>";
@@ -302,7 +320,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RA;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Philippe Fouquet";
 			};
 			buildConfigurationList = 2643FB531739402E001FB1D6 /* Build configuration list for PBXProject "SortMedia" */;
@@ -341,6 +359,7 @@
 				265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */,
 				265CB4AB176224D300C562E9 /* RAEditImage.xib in Resources */,
 				2631A46017D0892B0001868B /* RAPanelController.xib in Resources */,
+				263C287117D0C48900FBC5F7 /* RAGestPhotoSet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,25 +370,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265B119F17F8801E00F9AB0B /* Photo.m in Sources */,
 				2643FB681739402E001FB1D6 /* main.m in Sources */,
 				2643FB6F1739402F001FB1D6 /* RAAppDelegate.m in Sources */,
 				2643FB751739402F001FB1D6 /* SortMedia.xcdatamodeld in Sources */,
+				265B119C17F8801E00F9AB0B /* Tag.m in Sources */,
 				26CCDB65173D376500E472FE /* RAImageTranformer.m in Sources */,
 				263D10EC1740BF940005A017 /* RAGestTag.m in Sources */,
 				267D4AFC17450931002F98C2 /* RAEnabledTranformer.m in Sources */,
 				264B87CA17460AA1006C1126 /* RAGestActeur.m in Sources */,
 				2609D98D175490A80077E3BA /* RAGestPhoto.m in Sources */,
+				265B119917F8801E00F9AB0B /* Nationnalite.m in Sources */,
+				265B119617F8801D00F9AB0B /* Acteur.m in Sources */,
 				26219FF91755F13C000723B1 /* RAListActeur.m in Sources */,
 				265B00B51761C80900052863 /* RAListTag.m in Sources */,
-				265B00DE176217CF00052863 /* Model.xcmappingmodel in Sources */,
-				265B00E21762185E00052863 /* Photo.m in Sources */,
-				265B00E51762185E00052863 /* Media.m in Sources */,
-				265B00E81762185F00052863 /* Tag.m in Sources */,
-				265B00EB1762185F00052863 /* Nationnalite.m in Sources */,
-				265B00EE1762186000052863 /* Acteur.m in Sources */,
 				265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */,
+				265B11A717F880F500F9AB0B /* Model_3to4.xcmappingmodel in Sources */,
+				265B11A217F8801E00F9AB0B /* Media.m in Sources */,
 				265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */,
 				2631A45F17D0892B0001868B /* RAPanelController.m in Sources */,
+				263C287017D0C48900FBC5F7 /* RAGestPhotoSet.m in Sources */,
+				263C287717D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel in Sources */,
+				265B11A517F8801E00F9AB0B /* PhotoSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +429,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -440,7 +461,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -513,10 +533,12 @@
 		2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				265B119317F87FA500F9AB0B /* SortMedia 4.xcdatamodel */,
+				263C287217D0C70C00FBC5F7 /* SortMedia 3.xcdatamodel */,
 				265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */,
 				2643FB741739402F001FB1D6 /* SortMedia.xcdatamodel */,
 			);
-			currentVersion = 265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */;
+			currentVersion = 265B119317F87FA500F9AB0B /* SortMedia 4.xcdatamodel */;
 			path = SortMedia.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
