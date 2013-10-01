@@ -76,20 +76,17 @@
 - (void)useImage:(NSData*) data {
     PhotoSet *selectedphotoset = [self getCurrent:_PhotoSetArray];
     if (selectedphotoset) {
-//        selectedphotoset.photo = data;
+        selectedphotoset.photo = data;
     }
 }
 
 - (IBAction)AddDir:(id)sender {
     NSOpenPanel* openDlg = [NSOpenPanel openPanel];
     
-    // Disenable the selection of files in the dialog.
     [openDlg setCanChooseFiles:YES];
-    
-    // Enable the selection of directories in the dialog.
     [openDlg setCanChooseDirectories:NO];
-    
     [openDlg setFloatingPanel:YES];
+    [openDlg setAllowsMultipleSelection:YES];
     
     // Display the dialog.  If the OK button was pressed,
     // process the files.
@@ -112,7 +109,7 @@
         NSArray *files = [sheet URLs];
         PhotoSet *selectedPhotoSet = [self getCurrent:_PhotoSetArray];
         for( int ij = 0; ij < files.count; ij++) {
-            Photo *ps = [[Photo alloc] init];
+            Photo *ps = (Photo*)[NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:[self managedObjectContext]];
             NSData *data = [[NSData alloc] initWithContentsOfURL:files[ij]];
             ps.photo = data;
             ps.file_name = [[files[ij] path] lastPathComponent];

@@ -50,11 +50,11 @@
         <relationship name="for_media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="have_tag" inverseEntity="Media" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Acteur" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Media" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Nationnalite" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Photo" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="PhotoSet" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Tag" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Acteur" positionX="-234" positionY="-702" width="128" height="315"/>
+        <element name="Media" positionX="261" positionY="-567" width="128" height="150"/>
+        <element name="Nationnalite" positionX="-45" positionY="-372" width="128" height="120"/>
+        <element name="Photo" positionX="180" positionY="-171" width="128" height="60"/>
+        <element name="PhotoSet" positionX="376" positionY="-234" width="128" height="60"/>
+        <element name="Tag" positionX="-135" positionY="-201" width="128" height="120"/>
     </elements>
 </model>

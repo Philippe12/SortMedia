@@ -19,6 +19,7 @@
 
 
 - (id) initLoc;
+- (void)filePanelDidEnd:(NSOpenPanel*)sheet;
 
 - (IBAction)AddActeur:(id)sender;
 - (IBAction)RemoveActeur:(id)sender;
