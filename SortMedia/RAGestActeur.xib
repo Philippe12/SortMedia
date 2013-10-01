@@ -276,9 +276,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     </items>
                                                 </menu>
                                                 <connections>
-                                                    <binding destination="760" name="content" keyPath="arrangedObjects" id="1496"/>
-                                                    <binding destination="760" name="contentValues" keyPath="arrangedObjects.nom" previousBinding="1496" id="1498"/>
-                                                    <binding destination="5" name="selectedObject" keyPath="selection.have_nationnalite" previousBinding="1498" id="1501"/>
+                                                    <binding destination="5" name="selectedObject" keyPath="selection.have_nationnalite" id="ymz-8Y-7K4"/>
                                                 </connections>
                                             </popUpButtonCell>
                                             <connections>
@@ -297,7 +295,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" id="133">
-                                            <rect key="frame" x="14" y="251" width="85" height="17"/>
+                                            <rect key="frame" x="14" y="222" width="85" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Description :" id="134">
                                                 <font key="font" metaFont="system"/>
@@ -306,7 +304,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="1069">
-                                            <rect key="frame" x="104" y="118" width="313" height="150"/>
+                                            <rect key="frame" x="108" y="89" width="309" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="1070">
                                                 <font key="font" metaFont="system"/>
@@ -328,6 +326,46 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                 <action selector="GestNationnalite:" target="-2" id="1481"/>
                                             </connections>
                                         </button>
+                                        <textField verticalHuggingPriority="750" id="vrt-Ba-5fh">
+                                            <rect key="frame" x="14" y="249" width="89" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Ethnie :" id="dIy-dU-mfi">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" id="I6b-6j-6Ld">
+                                            <rect key="frame" x="367" y="240" width="56" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T9A-a5-U7L">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="GestEthnie:" target="-2" id="WZK-pn-KXI"/>
+                                            </connections>
+                                        </button>
+                                        <popUpButton verticalHuggingPriority="750" id="Kc7-gO-6YE">
+                                            <rect key="frame" x="106" y="244" width="262" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Caucasienne" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" allowsMixedState="YES" inset="2" selectedItem="Zbh-Vr-gXH" id="lTG-If-TbT">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" title="OtherViews" id="eG6-AA-vwl">
+                                                    <items>
+                                                        <menuItem title="Caucasienne" state="on" id="Zbh-Vr-gXH"/>
+                                                        <menuItem title="Item 2" id="ecR-6l-qu1"/>
+                                                        <menuItem title="Item 3" id="ycm-8t-aAX"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="rw7-m2-ac7" name="content" keyPath="arrangedObjects" id="TNU-XG-L5w"/>
+                                                <binding destination="rw7-m2-ac7" name="contentValues" keyPath="arrangedObjects.nom" previousBinding="TNU-XG-L5w" id="3ua-gR-PyH"/>
+                                                <binding destination="5" name="selectedObject" keyPath="selection.have_ethnie" previousBinding="3ua-gR-PyH" id="UXB-hW-Y5l"/>
+                                            </connections>
+                                        </popUpButton>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -712,6 +750,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </declaredKeys>
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="1504"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Ethnie" editable="NO" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="rw7-m2-ac7" userLabel="Ethnie Array">
+            <declaredKeys>
+                <string>tot</string>
+                <string>tu</string>
+            </declaredKeys>
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="R88-xJ-rlc"/>
             </connections>
         </arrayController>
     </objects>

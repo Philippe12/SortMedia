@@ -8,12 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import "RAListNationnalite.h"
+#import "RAListEthnie.h"
 #import "RAEditImage.h"
 #import "RAPanelController.h"
 
 @interface RAGestActeur : RAPanelController  <NSWindowDelegate> {
     NSDictionary *plistNationnalityContent;    
     RAListNationnalite *WndListNationnalite;
+    RAListEthnie *WndListEthnie;
     RAEditImage *WndEditImage;
 }
 - (void)useImage:(NSData*) data;
@@ -26,5 +28,6 @@
 
 - (IBAction)openimage:(id)sender;
 - (IBAction)GestNationnalite:(id)sender;
+- (IBAction)GestEthnie:(id)sender;
 
 @end

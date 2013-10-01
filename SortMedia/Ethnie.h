@@ -1,5 +1,5 @@
 //
-//  Nationnalite.h
+//  Ethnie.h
 //  SortMedia
 //
 //  Created by Philippe Fouquet on 01/10/13.
@@ -11,16 +11,14 @@
 
 @class Acteur;
 
-@interface Nationnalite : NSManagedObject
+@interface Ethnie : NSManagedObject
 
-@property (nonatomic, retain) NSString * code;
-@property (nonatomic, retain) NSData * drapau;
 @property (nonatomic, retain) NSNumber * indexe;
 @property (nonatomic, retain) NSString * nom;
 @property (nonatomic, retain) NSSet *for_acteur;
 @end
 
-@interface Nationnalite (CoreDataGeneratedAccessors)
+@interface Ethnie (CoreDataGeneratedAccessors)
 
 - (void)addFor_acteurObject:(Acteur *)value;
 - (void)removeFor_acteurObject:(Acteur *)value;

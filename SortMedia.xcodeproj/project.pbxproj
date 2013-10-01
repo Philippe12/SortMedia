@@ -26,7 +26,6 @@
 		2643FB6C1739402E001FB1D6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2643FB6A1739402E001FB1D6 /* Credits.rtf */; };
 		2643FB6F1739402F001FB1D6 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643FB6E1739402F001FB1D6 /* RAAppDelegate.m */; };
 		2643FB721739402F001FB1D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2643FB701739402F001FB1D6 /* MainMenu.xib */; };
-		2643FB751739402F001FB1D6 /* SortMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */; };
 		264B87CA17460AA1006C1126 /* RAGestActeur.m in Sources */ = {isa = PBXBuildFile; fileRef = 264B87C817460AA1006C1126 /* RAGestActeur.m */; };
 		264B87CB17460AA1006C1126 /* RAGestActeur.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264B87C917460AA1006C1126 /* RAGestActeur.xib */; };
 		265ACD6217536A610043E951 /* rebecca_by_oh8-d32gdy6.png in Resources */ = {isa = PBXBuildFile; fileRef = 265ACD6117536A610043E951 /* rebecca_by_oh8-d32gdy6.png */; };
@@ -34,17 +33,22 @@
 		265B00B61761C80900052863 /* RAListTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265B00B41761C80900052863 /* RAListTag.xib */; };
 		265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B00F2176218CC00052863 /* RAListNationnalite.m */; };
 		265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265B00F3176218CC00052863 /* RAListNationnalite.xib */; };
-		265B119617F8801D00F9AB0B /* Acteur.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119517F8801D00F9AB0B /* Acteur.m */; };
-		265B119917F8801E00F9AB0B /* Nationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119817F8801E00F9AB0B /* Nationnalite.m */; };
-		265B119C17F8801E00F9AB0B /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119B17F8801E00F9AB0B /* Tag.m */; };
-		265B119F17F8801E00F9AB0B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B119E17F8801E00F9AB0B /* Photo.m */; };
-		265B11A217F8801E00F9AB0B /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B11A117F8801E00F9AB0B /* Media.m */; };
-		265B11A517F8801E00F9AB0B /* PhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B11A417F8801E00F9AB0B /* PhotoSet.m */; };
 		265B11A717F880F500F9AB0B /* Model_3to4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 265B11A617F880F500F9AB0B /* Model_3to4.xcmappingmodel */; };
+		265B2F2917FB06A900010502 /* Ethnie.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F2817FB06A900010502 /* Ethnie.m */; };
+		265B2F2C17FB06A900010502 /* Nationnalite.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F2B17FB06A900010502 /* Nationnalite.m */; };
+		265B2F2F17FB06A900010502 /* PhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F2E17FB06A900010502 /* PhotoSet.m */; };
+		265B2F3217FB06A900010502 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F3117FB06A900010502 /* Tag.m */; };
+		265B2F3517FB06A900010502 /* Acteur.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F3417FB06A900010502 /* Acteur.m */; };
+		265B2F3817FB06A900010502 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F3717FB06A900010502 /* Media.m */; };
+		265B2F3B17FB06A900010502 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F3A17FB06A900010502 /* Photo.m */; };
+		265B2F3D17FB06E400010502 /* Model_4to5.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 265B2F3C17FB06E400010502 /* Model_4to5.xcmappingmodel */; };
 		265CB4A4176223F700C562E9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265CB4A2176223F700C562E9 /* Quartz.framework */; };
 		265CB4A5176223F700C562E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265CB4A3176223F700C562E9 /* QuartzCore.framework */; };
 		265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 265CB4A8176224D300C562E9 /* RAEditImage.m */; };
 		265CB4AB176224D300C562E9 /* RAEditImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265CB4A9176224D300C562E9 /* RAEditImage.xib */; };
+		2675E0F517FB0A3A00D6AA55 /* SortMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2675E0EF17FB0A3A00D6AA55 /* SortMedia.xcdatamodeld */; };
+		2675E10017FB0E1600D6AA55 /* RAListEthnie.m in Sources */ = {isa = PBXBuildFile; fileRef = 2675E0FE17FB0E1600D6AA55 /* RAListEthnie.m */; };
+		2675E10117FB0E1600D6AA55 /* RAListEthnie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2675E0FF17FB0E1600D6AA55 /* RAListEthnie.xib */; };
 		267D4AFC17450931002F98C2 /* RAEnabledTranformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D4AFB17450931002F98C2 /* RAEnabledTranformer.m */; };
 		26CCDB65173D376500E472FE /* RAImageTranformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCDB64173D376500E472FE /* RAImageTranformer.m */; };
 /* End PBXBuildFile section */
@@ -64,7 +68,6 @@
 		263C286D17D0C48900FBC5F7 /* RAGestPhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestPhotoSet.h; sourceTree = "<group>"; };
 		263C286E17D0C48900FBC5F7 /* RAGestPhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestPhotoSet.m; sourceTree = "<group>"; };
 		263C286F17D0C48900FBC5F7 /* RAGestPhotoSet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestPhotoSet.xib; sourceTree = "<group>"; };
-		263C287217D0C70C00FBC5F7 /* SortMedia 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 3.xcdatamodel"; sourceTree = "<group>"; };
 		263C287617D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = Model_2to3.xcmappingmodel; path = ../Model_2to3.xcmappingmodel; sourceTree = "<group>"; };
 		263D10E91740BF940005A017 /* RAGestTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestTag.h; sourceTree = "<group>"; };
 		263D10EA1740BF940005A017 /* RAGestTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestTag.m; sourceTree = "<group>"; };
@@ -82,7 +85,6 @@
 		2643FB6D1739402E001FB1D6 /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
 		2643FB6E1739402F001FB1D6 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		2643FB711739402F001FB1D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2643FB741739402F001FB1D6 /* SortMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SortMedia.xcdatamodel; sourceTree = "<group>"; };
 		264B87C717460AA1006C1126 /* RAGestActeur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAGestActeur.h; sourceTree = "<group>"; };
 		264B87C817460AA1006C1126 /* RAGestActeur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAGestActeur.m; sourceTree = "<group>"; };
 		264B87C917460AA1006C1126 /* RAGestActeur.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAGestActeur.xib; sourceTree = "<group>"; };
@@ -90,30 +92,39 @@
 		265B00B21761C80900052863 /* RAListTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListTag.h; sourceTree = "<group>"; };
 		265B00B31761C80900052863 /* RAListTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListTag.m; sourceTree = "<group>"; };
 		265B00B41761C80900052863 /* RAListTag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListTag.xib; sourceTree = "<group>"; };
-		265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 2.xcdatamodel"; sourceTree = "<group>"; };
 		265B00C71762078A00052863 /* SortMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SortMedia.entitlements; sourceTree = "<group>"; };
 		265B00F1176218CC00052863 /* RAListNationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListNationnalite.h; sourceTree = "<group>"; };
 		265B00F2176218CC00052863 /* RAListNationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListNationnalite.m; sourceTree = "<group>"; };
 		265B00F3176218CC00052863 /* RAListNationnalite.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListNationnalite.xib; sourceTree = "<group>"; };
-		265B119317F87FA500F9AB0B /* SortMedia 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SortMedia 4.xcdatamodel"; sourceTree = "<group>"; };
-		265B119417F8801D00F9AB0B /* Acteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acteur.h; sourceTree = "<group>"; };
-		265B119517F8801D00F9AB0B /* Acteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acteur.m; sourceTree = "<group>"; };
-		265B119717F8801E00F9AB0B /* Nationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nationnalite.h; sourceTree = "<group>"; };
-		265B119817F8801E00F9AB0B /* Nationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nationnalite.m; sourceTree = "<group>"; };
-		265B119A17F8801E00F9AB0B /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
-		265B119B17F8801E00F9AB0B /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
-		265B119D17F8801E00F9AB0B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		265B119E17F8801E00F9AB0B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		265B11A017F8801E00F9AB0B /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
-		265B11A117F8801E00F9AB0B /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
-		265B11A317F8801E00F9AB0B /* PhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSet.h; sourceTree = "<group>"; };
-		265B11A417F8801E00F9AB0B /* PhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSet.m; sourceTree = "<group>"; };
 		265B11A617F880F500F9AB0B /* Model_3to4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = Model_3to4.xcmappingmodel; path = ../Model_3to4.xcmappingmodel; sourceTree = "<group>"; };
+		265B2F2717FB06A900010502 /* Ethnie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ethnie.h; sourceTree = "<group>"; };
+		265B2F2817FB06A900010502 /* Ethnie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ethnie.m; sourceTree = "<group>"; };
+		265B2F2A17FB06A900010502 /* Nationnalite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nationnalite.h; sourceTree = "<group>"; };
+		265B2F2B17FB06A900010502 /* Nationnalite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nationnalite.m; sourceTree = "<group>"; };
+		265B2F2D17FB06A900010502 /* PhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSet.h; sourceTree = "<group>"; };
+		265B2F2E17FB06A900010502 /* PhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSet.m; sourceTree = "<group>"; };
+		265B2F3017FB06A900010502 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		265B2F3117FB06A900010502 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		265B2F3317FB06A900010502 /* Acteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acteur.h; sourceTree = "<group>"; };
+		265B2F3417FB06A900010502 /* Acteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acteur.m; sourceTree = "<group>"; };
+		265B2F3617FB06A900010502 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		265B2F3717FB06A900010502 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		265B2F3917FB06A900010502 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		265B2F3A17FB06A900010502 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		265B2F3C17FB06E400010502 /* Model_4to5.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_4to5.xcmappingmodel; sourceTree = "<group>"; };
 		265CB4A2176223F700C562E9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		265CB4A3176223F700C562E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		265CB4A7176224D300C562E9 /* RAEditImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAEditImage.h; sourceTree = "<group>"; };
 		265CB4A8176224D300C562E9 /* RAEditImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAEditImage.m; sourceTree = "<group>"; };
 		265CB4A9176224D300C562E9 /* RAEditImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAEditImage.xib; sourceTree = "<group>"; };
+		2675E0F017FB0A3A00D6AA55 /* SortMedia 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 2.xcdatamodel"; sourceTree = "<group>"; };
+		2675E0F117FB0A3A00D6AA55 /* SortMedia 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 3.xcdatamodel"; sourceTree = "<group>"; };
+		2675E0F217FB0A3A00D6AA55 /* SortMedia 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 4.xcdatamodel"; sourceTree = "<group>"; };
+		2675E0F317FB0A3A00D6AA55 /* SortMedia 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SortMedia 5.xcdatamodel"; sourceTree = "<group>"; };
+		2675E0F417FB0A3A00D6AA55 /* SortMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SortMedia.xcdatamodel; sourceTree = "<group>"; };
+		2675E0FD17FB0E1600D6AA55 /* RAListEthnie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListEthnie.h; sourceTree = "<group>"; };
+		2675E0FE17FB0E1600D6AA55 /* RAListEthnie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListEthnie.m; sourceTree = "<group>"; };
+		2675E0FF17FB0E1600D6AA55 /* RAListEthnie.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAListEthnie.xib; sourceTree = "<group>"; };
 		267D4AFA17450931002F98C2 /* RAEnabledTranformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAEnabledTranformer.h; sourceTree = "<group>"; };
 		267D4AFB17450931002F98C2 /* RAEnabledTranformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAEnabledTranformer.m; sourceTree = "<group>"; };
 		26CCDB63173D376500E472FE /* RAImageTranformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAImageTranformer.h; sourceTree = "<group>"; };
@@ -188,13 +199,13 @@
 		2643FB611739402E001FB1D6 /* SortMedia */ = {
 			isa = PBXGroup;
 			children = (
+				2675E0EF17FB0A3A00D6AA55 /* SortMedia.xcdatamodeld */,
 				265B00DF1762182300052863 /* Migration model */,
 				265B00C71762078A00052863 /* SortMedia.entitlements */,
 				263D10E61740BDE20005A017 /* Windows */,
 				2643FB6D1739402E001FB1D6 /* RAAppDelegate.h */,
 				2643FB6E1739402F001FB1D6 /* RAAppDelegate.m */,
 				2643FB701739402F001FB1D6 /* MainMenu.xib */,
-				2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */,
 				2643FB7E173940E0001FB1D6 /* Gestion DB */,
 				2643FB621739402E001FB1D6 /* Supporting Files */,
 			);
@@ -219,18 +230,20 @@
 		2643FB7E173940E0001FB1D6 /* Gestion DB */ = {
 			isa = PBXGroup;
 			children = (
-				265B11A317F8801E00F9AB0B /* PhotoSet.h */,
-				265B11A417F8801E00F9AB0B /* PhotoSet.m */,
-				265B11A017F8801E00F9AB0B /* Media.h */,
-				265B11A117F8801E00F9AB0B /* Media.m */,
-				265B119D17F8801E00F9AB0B /* Photo.h */,
-				265B119E17F8801E00F9AB0B /* Photo.m */,
-				265B119A17F8801E00F9AB0B /* Tag.h */,
-				265B119B17F8801E00F9AB0B /* Tag.m */,
-				265B119717F8801E00F9AB0B /* Nationnalite.h */,
-				265B119817F8801E00F9AB0B /* Nationnalite.m */,
-				265B119417F8801D00F9AB0B /* Acteur.h */,
-				265B119517F8801D00F9AB0B /* Acteur.m */,
+				265B2F3917FB06A900010502 /* Photo.h */,
+				265B2F3A17FB06A900010502 /* Photo.m */,
+				265B2F3617FB06A900010502 /* Media.h */,
+				265B2F3717FB06A900010502 /* Media.m */,
+				265B2F3317FB06A900010502 /* Acteur.h */,
+				265B2F3417FB06A900010502 /* Acteur.m */,
+				265B2F3017FB06A900010502 /* Tag.h */,
+				265B2F3117FB06A900010502 /* Tag.m */,
+				265B2F2D17FB06A900010502 /* PhotoSet.h */,
+				265B2F2E17FB06A900010502 /* PhotoSet.m */,
+				265B2F2A17FB06A900010502 /* Nationnalite.h */,
+				265B2F2B17FB06A900010502 /* Nationnalite.m */,
+				265B2F2717FB06A900010502 /* Ethnie.h */,
+				265B2F2817FB06A900010502 /* Ethnie.m */,
 				26CCDB63173D376500E472FE /* RAImageTranformer.h */,
 				26CCDB64173D376500E472FE /* RAImageTranformer.m */,
 				267D4AFA17450931002F98C2 /* RAEnabledTranformer.h */,
@@ -242,6 +255,7 @@
 		265B00DF1762182300052863 /* Migration model */ = {
 			isa = PBXGroup;
 			children = (
+				265B2F3C17FB06E400010502 /* Model_4to5.xcmappingmodel */,
 				265B11A617F880F500F9AB0B /* Model_3to4.xcmappingmodel */,
 				263C287617D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel */,
 			);
@@ -260,6 +274,9 @@
 				265B00F1176218CC00052863 /* RAListNationnalite.h */,
 				265B00F2176218CC00052863 /* RAListNationnalite.m */,
 				265B00F3176218CC00052863 /* RAListNationnalite.xib */,
+				2675E0FD17FB0E1600D6AA55 /* RAListEthnie.h */,
+				2675E0FE17FB0E1600D6AA55 /* RAListEthnie.m */,
+				2675E0FF17FB0E1600D6AA55 /* RAListEthnie.xib */,
 			);
 			name = Liste;
 			sourceTree = "<group>";
@@ -358,6 +375,7 @@
 				265B00B61761C80900052863 /* RAListTag.xib in Resources */,
 				265B00F5176218CC00052863 /* RAListNationnalite.xib in Resources */,
 				265CB4AB176224D300C562E9 /* RAEditImage.xib in Resources */,
+				2675E10117FB0E1600D6AA55 /* RAListEthnie.xib in Resources */,
 				2631A46017D0892B0001868B /* RAPanelController.xib in Resources */,
 				263C287117D0C48900FBC5F7 /* RAGestPhotoSet.xib in Resources */,
 			);
@@ -370,28 +388,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265B119F17F8801E00F9AB0B /* Photo.m in Sources */,
+				265B2F2F17FB06A900010502 /* PhotoSet.m in Sources */,
 				2643FB681739402E001FB1D6 /* main.m in Sources */,
 				2643FB6F1739402F001FB1D6 /* RAAppDelegate.m in Sources */,
-				2643FB751739402F001FB1D6 /* SortMedia.xcdatamodeld in Sources */,
-				265B119C17F8801E00F9AB0B /* Tag.m in Sources */,
+				265B2F3D17FB06E400010502 /* Model_4to5.xcmappingmodel in Sources */,
 				26CCDB65173D376500E472FE /* RAImageTranformer.m in Sources */,
+				265B2F2C17FB06A900010502 /* Nationnalite.m in Sources */,
+				265B2F3817FB06A900010502 /* Media.m in Sources */,
 				263D10EC1740BF940005A017 /* RAGestTag.m in Sources */,
+				265B2F3217FB06A900010502 /* Tag.m in Sources */,
 				267D4AFC17450931002F98C2 /* RAEnabledTranformer.m in Sources */,
 				264B87CA17460AA1006C1126 /* RAGestActeur.m in Sources */,
 				2609D98D175490A80077E3BA /* RAGestPhoto.m in Sources */,
-				265B119917F8801E00F9AB0B /* Nationnalite.m in Sources */,
-				265B119617F8801D00F9AB0B /* Acteur.m in Sources */,
+				2675E10017FB0E1600D6AA55 /* RAListEthnie.m in Sources */,
 				26219FF91755F13C000723B1 /* RAListActeur.m in Sources */,
 				265B00B51761C80900052863 /* RAListTag.m in Sources */,
+				2675E0F517FB0A3A00D6AA55 /* SortMedia.xcdatamodeld in Sources */,
 				265B00F4176218CC00052863 /* RAListNationnalite.m in Sources */,
 				265B11A717F880F500F9AB0B /* Model_3to4.xcmappingmodel in Sources */,
-				265B11A217F8801E00F9AB0B /* Media.m in Sources */,
 				265CB4AA176224D300C562E9 /* RAEditImage.m in Sources */,
+				265B2F2917FB06A900010502 /* Ethnie.m in Sources */,
 				2631A45F17D0892B0001868B /* RAPanelController.m in Sources */,
+				265B2F3B17FB06A900010502 /* Photo.m in Sources */,
 				263C287017D0C48900FBC5F7 /* RAGestPhotoSet.m in Sources */,
+				265B2F3517FB06A900010502 /* Acteur.m in Sources */,
 				263C287717D0CC4500FBC5F7 /* Model_2to3.xcmappingmodel in Sources */,
-				265B11A517F8801E00F9AB0B /* PhotoSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,15 +551,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2643FB731739402F001FB1D6 /* SortMedia.xcdatamodeld */ = {
+		2675E0EF17FB0A3A00D6AA55 /* SortMedia.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				265B119317F87FA500F9AB0B /* SortMedia 4.xcdatamodel */,
-				263C287217D0C70C00FBC5F7 /* SortMedia 3.xcdatamodel */,
-				265B00B7176201C400052863 /* SortMedia 2.xcdatamodel */,
-				2643FB741739402F001FB1D6 /* SortMedia.xcdatamodel */,
+				2675E0F017FB0A3A00D6AA55 /* SortMedia 2.xcdatamodel */,
+				2675E0F117FB0A3A00D6AA55 /* SortMedia 3.xcdatamodel */,
+				2675E0F217FB0A3A00D6AA55 /* SortMedia 4.xcdatamodel */,
+				2675E0F317FB0A3A00D6AA55 /* SortMedia 5.xcdatamodel */,
+				2675E0F417FB0A3A00D6AA55 /* SortMedia.xcdatamodel */,
 			);
-			currentVersion = 265B119317F87FA500F9AB0B /* SortMedia 4.xcdatamodel */;
+			currentVersion = 2675E0F317FB0A3A00D6AA55 /* SortMedia 5.xcdatamodel */;
 			path = SortMedia.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

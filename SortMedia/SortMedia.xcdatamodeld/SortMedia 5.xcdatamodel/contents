@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="V3" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F37" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Acteur" representedClassName="Acteur" syncable="YES">
+        <attribute name="cheveux" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="indexe" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="mensuration_bonnet" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mensuration_buste" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mensuration_hanches" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mensuration_taille" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mensuration_taille_semi_basse" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="naisance" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="poids" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="prenom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taille" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="yeux" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="for_media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="have_acteur" inverseEntity="Media" syncable="YES"/>
+        <relationship name="have_ethnie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ethnie" inverseName="for_acteur" inverseEntity="Ethnie" syncable="YES"/>
+        <relationship name="have_nationnalite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nationnalite" inverseName="for_acteur" inverseEntity="Nationnalite" syncable="YES"/>
+    </entity>
+    <entity name="Ethnie" representedClassName="Ethnie" syncable="YES">
+        <attribute name="indexe" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="for_acteur" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Acteur" inverseName="have_ethnie" inverseEntity="Acteur" syncable="YES"/>
+    </entity>
+    <entity name="Media" representedClassName="Media" isAbstract="YES" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="indexe" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="have_acteur" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Acteur" inverseName="for_media" inverseEntity="Acteur" syncable="YES"/>
+        <relationship name="have_tag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="for_media" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Nationnalite" representedClassName="Nationnalite" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" maxValueString="4" syncable="YES"/>
+        <attribute name="drapau" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="indexe" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="for_acteur" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Acteur" inverseName="have_nationnalite" inverseEntity="Acteur" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" parentEntity="Media" syncable="YES">
+        <relationship name="have_photoset" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoSet" inverseName="have_photo" inverseEntity="PhotoSet" syncable="YES"/>
+    </entity>
+    <entity name="PhotoSet" representedClassName="PhotoSet" parentEntity="Media" syncable="YES">
+        <relationship name="have_photo" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="have_photoset" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="indexe" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="for_media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="have_tag" inverseEntity="Media" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Acteur" positionX="-234" positionY="-702" width="128" height="328"/>
+        <element name="Ethnie" positionX="-486" positionY="-630" width="128" height="88"/>
+        <element name="Media" positionX="261" positionY="-567" width="128" height="150"/>
+        <element name="Nationnalite" positionX="-486" positionY="-489" width="128" height="120"/>
+        <element name="Photo" positionX="180" positionY="-171" width="128" height="60"/>
+        <element name="PhotoSet" positionX="376" positionY="-234" width="128" height="60"/>
+        <element name="Tag" positionX="-153" positionY="-306" width="128" height="120"/>
+    </elements>
+</model>

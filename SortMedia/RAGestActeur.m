@@ -57,6 +57,11 @@
     [WndListNationnalite runAsPanel:[self window]];
 }
 
+- (IBAction)GestEthnie:(id)sender {
+    WndListEthnie = [[RAListEthnie alloc] initWithManagedObjectContext:[self managedObjectContext]:[self managedObjectModel]:[self persistentStoreCoordinator]];
+    [WndListEthnie runAsPanel:[self window]];
+}
+
 - (void)useImage:(NSData*) data {
     Acteur *selectedActeur = [self getCurrent:_ActeurArrayController];
     if (selectedActeur) {

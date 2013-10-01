@@ -2,14 +2,14 @@
 //  Acteur.h
 //  SortMedia
 //
-//  Created by Philippe Fouquet on 29/09/13.
+//  Created by Philippe Fouquet on 01/10/13.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Media, Nationnalite;
+@class Ethnie, Media, Nationnalite;
 
 @interface Acteur : NSManagedObject
 
@@ -31,6 +31,7 @@
 @property (nonatomic, retain) NSDecimalNumber * yeux;
 @property (nonatomic, retain) NSSet *for_media;
 @property (nonatomic, retain) Nationnalite *have_nationnalite;
+@property (nonatomic, retain) Ethnie *have_ethnie;
 @end
 
 @interface Acteur (CoreDataGeneratedAccessors)
